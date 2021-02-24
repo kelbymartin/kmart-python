@@ -1,25 +1,25 @@
 def add(x, y):
-    #code
+    #code - Tabirz
     output = (x + y)
     return output
 
 def subtract(x, y):
-    #code
+    #code - Tabirz
     output = (x - y)
     return output
 
 def multiply(x, y):
-    #code
+    #code - Jesus
     Output = (x * y)
     return Output
 
 def divide(x, y):
-    #code
+    #code - Jesus
     Output = (x / y)
     return Output
 
 def power(x, y):
-    #code
+    #code - Tabirz
     output = (x ** y)
     return output
 

@@ -1,0 +1,10 @@
+print(5 < 10)
+print(5 < 5)
+print(5 == 5)
+print(5 != 5)
+print(5 <= 5)
+
+print(True and True)
+print(True and False)
+print(True or False)
+print(not True)

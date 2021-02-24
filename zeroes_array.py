@@ -2,17 +2,13 @@ import math
 
 def center_zeroes(array):
     i = 0
+    zcount = 0
     while i < len(array):
-        if i <= math.floor(len(array) / 2):
-            if array[i] == 0:
-                temp = array[i + 1]
-                array[i + 1] = array[i]
-                array[i] = temp
-        else:
-            if array[i] == 0:
-                temp = array[i - 1]
-                array[i - 1] = array[i]
-                array[i] = temp
+        if array[i] == 0:
+            zcount += 1
+            array = array[0:int(math.floor(len(array)) / 2 + (zcount / 2))]
+            array.append(0)
+            array.append(array[math.floor(len(array)) / 2 + (zcount / 2):])
         i += 1
     print(array)
 

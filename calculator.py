@@ -10,9 +10,13 @@ def subtract(x, y):
 
 def multiply(x, y):
     #code
+    Output = (x * y)
+    return Output
 
 def divide(x, y):
     #code
+    Output = (x / y)
+    return Output
 
 def power(x, y):
     #code

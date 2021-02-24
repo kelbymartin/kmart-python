@@ -7,10 +7,10 @@ def weird_arithmetic(x, y, z):
 #result = weird_arithmetic(5, 6, 7)
 #print("weird_arithmetic result:", result)
 
-def custom_greeting(greeting, name):
+def custom_greeting(name, greeting="Hi"):
     print(greeting + " " + name)
 
-#custom_greeting("Hi", "Jeff")
+custom_greeting("Jeff")
 
 
 r = 4

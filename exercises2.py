@@ -4,12 +4,36 @@
 #     print(i**2)
 
 #print fib less than 1000
-n1 = 0
-n2 = 1
-print(n1)
-print(n2)
-while n2 < 100:
-    temp = n1 + n2
-    n1 = n2
-    n2 = temp
-    print(n2)
+# n1 = 0
+# n2 = 1
+# print(n1)
+# print(n2)
+# while n2 < 100:
+#     temp = n1 + n2
+#     n1 = n2
+#     n2 = temp
+#     print(n2)
+
+#warmup
+n = int(input("Enter number of scores: "))
+i = 0
+highest = 0
+ru = 0
+scores = []
+while i < n:
+    score = int(input("Enter score: "))
+    # if score > highest:
+    #     ru = highest
+    #     highest = score
+    # elif score > ru:
+    #     ru = score
+    scores.append(score)
+    i += 1
+scores.sort()
+scores.reverse()
+for i in scores:
+    if i > highest:
+        highest = i
+    if i < highest and i > ru:
+        ru = i
+print("Runner-up:", ru)

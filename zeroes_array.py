@@ -19,4 +19,4 @@ def center_zeroes(array):
 arrays = [[0, 3, 1], [1, 1, 3, 0], [1, 1, 3, 0, 6, 0]]
 for array in arrays:
     center_zeroes(array)
-#result:
+#result: [3, 0, 1], [1, 0, 1, 3], [1, 1, 0, 0, 3, 6]

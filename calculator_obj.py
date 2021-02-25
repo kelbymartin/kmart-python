@@ -65,37 +65,37 @@ if __name__ == "__main__":
         #Output
         if ch == 1:
             #User input
-            x = int(input("Number: "))
-            y = int(input("Number: "))
+            x = float(input("Number: "))
+            y = float(input("Number: "))
             #call calculator
             print(calc.add(x,y))
         elif ch == 2:
             #User input
-            x = int(input("Number: "))
-            y = int(input("Number: "))
+            x = float(input("Number: "))
+            y = float(input("Number: "))
             #call calculator
             print(calc.subtract(x,y))
         elif ch == 3:
             #User input
-            x = int(input("Number: "))
-            y = int(input("Number: "))
+            x = float(input("Number: "))
+            y = float(input("Number: "))
             #call calculator
             print(calc.multiply(x,y))
         elif ch == 4:
             #User input
-            x = int(input("Number: "))
-            y = int(input("Number: "))
+            x = float(input("Number: "))
+            y = float(input("Number: "))
             #call calculator
             print(calc.divide(x,y))
         elif ch == 5:
             #User input
-            x = int(input("Number: "))
-            y = int(input("Number: "))
+            x = float(input("Number: "))
+            y = float(input("Number: "))
             #call calculator
             print(calc.power(x,y))
         elif ch == 6:
             #User input
-            x = int(input("Number: "))
+            x = float(input("Number: "))
             #call calculator
             print(calc.root(x))
         elif ch == 7:

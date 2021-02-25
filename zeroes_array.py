@@ -3,12 +3,15 @@ import math
 def center_zeroes(array):
     i = 0
     zcount = 0
+    temparray = array
     while i < len(array):
         if array[i] == 0:
-            zcount += 1
+            array.pop(i)
+            temparray = array[int(math.floor(len(array)) / 2 + (zcount / 2)):len(array)]
             array = array[0:int(math.floor(len(array)) / 2 + (zcount / 2))]
             array.append(0)
-            array.append(array[math.floor(len(array)) / 2 + (zcount / 2):])
+            array = array + temparray
+            zcount += 1
         i += 1
     print(array)
 

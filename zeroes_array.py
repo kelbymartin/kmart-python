@@ -16,7 +16,7 @@ def center_zeroes(array):
     print(array)
 
 #test arrays: [0, 3, 1], [1, 1, 3, 0], [1, 1, 3, 0, 6, 0]
-arrays = [[0, 3, 1], [1, 1, 3, 0], [1, 1, 3, 0, 6, 0]]
+arrays = [[0, 3, 1], [1, 1, 3, 0], [1, 1, 3, 0, 6, 0], [1, 0, 3, 0, 5, 0]]
 for array in arrays:
     center_zeroes(array)
 #result: [3, 0, 1], [1, 0, 1, 3], [1, 1, 0, 0, 3, 6]

@@ -1,9 +1,11 @@
 import math
 
 class Calculator():
+    #history attributes
     last = 0
     mem = []
 
+    #Calculator methods... Add, Subtract, Multiply, etc
     def add(self, x, y):
         self.last = (x + y)
         self.add_mem(self.last)
@@ -34,24 +36,27 @@ class Calculator():
         self.add_mem(self.last)
         return self.last
 
+    #History methods
     def get_last(self):
         return self.last
-    
+
     def add_mem(self, value):
         if len(self.mem) < 5:
             self.mem.append(value)
         else:
             self.mem.pop(0)
             self.mem.append(value)
-    
+
     def get_mem(self):
         return self.mem
-    
+
     def clear_mem(self):
         self.mem.clear()
-        
+
+### end of calculator class
 
 if __name__ == "__main__":
+    #Initialize calculator
     calc = Calculator()
     while True:
         #User input
@@ -59,33 +64,48 @@ if __name__ == "__main__":
         #Calculator logic
         #Output
         if ch == 1:
+            #User input
             x = int(input("Number: "))
             y = int(input("Number: "))
+            #call calculator
             print(calc.add(x,y))
         elif ch == 2:
+            #User input
             x = int(input("Number: "))
             y = int(input("Number: "))
+            #call calculator
             print(calc.subtract(x,y))
         elif ch == 3:
+            #User input
             x = int(input("Number: "))
             y = int(input("Number: "))
+            #call calculator
             print(calc.multiply(x,y))
         elif ch == 4:
+            #User input
             x = int(input("Number: "))
             y = int(input("Number: "))
+            #call calculator
             print(calc.divide(x,y))
         elif ch == 5:
+            #User input
             x = int(input("Number: "))
             y = int(input("Number: "))
+            #call calculator
             print(calc.power(x,y))
         elif ch == 6:
+            #User input
             x = int(input("Number: "))
+            #call calculator
             print(calc.root(x))
         elif ch == 7:
+            #call calculator
             print(calc.get_last())
         elif ch == 8:
+            #call calculator
             print(calc.get_mem())
         elif ch == 9:
+            #call calculator
             calc.clear_mem()
         elif ch == 0:
             break

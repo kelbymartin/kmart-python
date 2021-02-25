@@ -17,7 +17,7 @@
 #warmup
 n = int(input("Enter number of scores: "))
 i = 0
-highest = 0
+# highest = 0
 ru = 0
 scores = []
 while i < n:
@@ -29,11 +29,10 @@ while i < n:
     #     ru = score
     scores.append(score)
     i += 1
-scores.sort()
-scores.reverse()
-for i in scores:
-    if i > highest:
-        highest = i
-    if i < highest and i > ru:
-        ru = i
-print("Runner-up:", ru)
+def runner(scores):
+    scores.sort(reverse=True)
+    highest = scores[0]
+    for i in scores:
+        if i < highest:
+            return i
+print("Runner-up:", runner(scores))

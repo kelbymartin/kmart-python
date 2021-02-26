@@ -1,11 +1,11 @@
 def minimum_points(thresh, points):
     solve = 0
-    solve += points[0]
+    first = points[0]
     i = 0
     while i < len(points) - 1:
         if i < len(points) - 2:
-            one = points[i + 1] - solve
-            two = points[i + 2] - solve
+            one = points[i + 1] - first
+            two = points[i + 2] - first
             if one >= thresh and one < two:
                 solve = one
                 i += 1
@@ -15,11 +15,12 @@ def minimum_points(thresh, points):
                 i += 2
                 # print("Choose +2, solve:", solve)
         else:
-            one = points[i + 1] - solve
+            one = points[i + 1] - first
             solve = one
             i += 1
         if solve >= thresh:
             return solve
+    return solve
         
 
 print("Test 1:", minimum_points(2, [1, 2, 3]))

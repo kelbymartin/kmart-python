@@ -1,4 +1,10 @@
 import math
+import logging
+
+#level+ of logging to capture
+logging.basicConfig(filename="calculator_obj.log", level=logging.DEBUG, 
+format="%(message)s:%(name)s:%(levelname)s:%(funcName)s") 
+#logging.debug() #like a print statement
 
 class Calculator():
     #history attributes
@@ -71,35 +77,41 @@ if __name__ == "__main__":
                 y = float(input("Number: "))
                 #call calculator
                 print(calc.add(x,y))
+                logging.debug(calc.add(x,y))
             elif ch == 2:
                 #User input
                 x = float(input("Number: "))
                 y = float(input("Number: "))
                 #call calculator
                 print(calc.subtract(x,y))
+                logging.debug(calc.subtract(x,y))
             elif ch == 3:
                 #User input
                 x = float(input("Number: "))
                 y = float(input("Number: "))
                 #call calculator
                 print(calc.multiply(x,y))
+                logging.debug(calc.multiply(x,y))
             elif ch == 4:
                 #User input
                 x = float(input("Number: "))
                 y = float(input("Number: "))
                 #call calculator
                 print(calc.divide(x,y))
+                logging.debug(calc.divide(x,y))
             elif ch == 5:
                 #User input
                 x = float(input("Number: "))
                 y = float(input("Number: "))
                 #call calculator
                 print(calc.power(x,y))
+                logging.debug(calc.power(x,y))
             elif ch == 6:
                 #User input
                 x = float(input("Number: "))
                 #call calculator
                 print(calc.root(x))
+                logging.debug(calc.root(x))
             elif ch == 7:
                 #call calculator
                 print(calc.get_last())

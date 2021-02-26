@@ -115,16 +115,25 @@ if __name__ == "__main__":
             elif ch == 7:
                 #call calculator
                 print(calc.get_last())
+                logging.debug(calc.get_last())
             elif ch == 8:
                 #call calculator
                 print(calc.get_mem())
+                logging.debug(calc.get_mem())
             elif ch == 9:
                 #call calculator
                 calc.clear_mem()
+                logging.debug(calc.clear_mem())
             elif ch == 0:
+                logging.debug("exit")
                 break
             else:
                 print("Use menu options")
+                logging.debug("Use menu options")
 
         except ValueError:
             print("Not a number")
+            logging.debug("Not a number")
+        except ZeroDivisionError:
+            print("Cannot divide by 0")
+            logging.debug("Cannot divide by 0")

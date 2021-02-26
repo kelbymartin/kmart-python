@@ -3,7 +3,7 @@ import logging
 
 #level+ of logging to capture
 logging.basicConfig(filename="calculator_obj.log", level=logging.DEBUG, 
-format="%(message)s:%(name)s:%(levelname)s:%(funcName)s") 
+format="%(asctime)s:%(message)s:%(name)s:%(levelname)s:%(funcName)s") 
 #logging.debug() #like a print statement
 
 class Calculator():

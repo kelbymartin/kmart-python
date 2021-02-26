@@ -1,11 +1,5 @@
-66.0:root:DEBUG:<module>
-0.3333333333333333:root:DEBUG:<module>
-Not a number:root:DEBUG:<module>
-Cannot divide by 0:root:DEBUG:<module>
-66.0:root:DEBUG:<module>
-Not a number:root:DEBUG:<module>
-Use menu options:root:DEBUG:<module>
-0.7777777777777778:root:DEBUG:<module>
-8.831760866327848:root:DEBUG:<module>
-Cannot divide by 0:root:DEBUG:<module>
-exit:root:DEBUG:<module>
+2021-02-26 12:50:58,655:5.0:root:DEBUG:<module>
+2021-02-26 12:51:00,906:Cannot divide by 0:root:DEBUG:<module>
+2021-02-26 12:51:02,316:Use menu options:root:DEBUG:<module>
+2021-02-26 12:51:06,307:Not a number:root:DEBUG:<module>
+2021-02-26 12:51:09,825:exit:root:DEBUG:<module>

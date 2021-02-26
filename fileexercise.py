@@ -36,4 +36,4 @@ with open('fileexercise.txt', 'w') as f:
 
 with open('fileexercise.txt', 'a') as f:
     for line in lines_list:
-        f.write(str(line))
+        f.write(str(line) + "\n")
